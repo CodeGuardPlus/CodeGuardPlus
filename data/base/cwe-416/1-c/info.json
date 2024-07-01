@@ -1,0 +1,6 @@
+{
+  "language": "c",
+  "cwe": "CWE-416",
+  "scenario": "1-c",
+  "check_ql": "~/codeql/codeql-repo/cpp/ql/src/Critical/UseAfterFree.ql"
+}

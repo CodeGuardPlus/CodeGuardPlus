@@ -1,0 +1,6 @@
+{
+  "language": "c",
+  "cwe": "CWE-078",
+  "scenario": "3-c",
+  "check_ql": "~/codeql/codeql-repo/cpp/ql/src/Security/CWE/CWE-078/ExecTainted.ql"
+}

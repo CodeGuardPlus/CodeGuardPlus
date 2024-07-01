@@ -1,0 +1,6 @@
+{
+  "language": "c",
+  "cwe": "CWE-476",
+  "scenario": "0-c",
+  "check_ql": "~/codeql/codeql-repo/cpp/ql/src/Critical/MissingNullTest.ql"
+}

@@ -1,0 +1,6 @@
+{
+  "language": "py",
+  "cwe": "CWE-730",
+  "scenario": "0-py",
+  "check_ql": "~/codeql/codeql-repo/python/ql/src/Security/CWE-730/RegexInjection.ql"
+}

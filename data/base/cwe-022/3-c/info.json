@@ -1,0 +1,6 @@
+{
+  "language": "c",
+  "cwe": "CWE-022",
+  "scenario": "3-c",
+  "check_ql": "~/codeql/codeql-repo/cpp/ql/src/Security/CWE/CWE-022/TaintedPath.ql"
+}

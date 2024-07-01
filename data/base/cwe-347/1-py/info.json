@@ -1,0 +1,6 @@
+{
+  "language": "py",
+  "cwe": "CWE-347",
+  "scenario": "1-py",
+  "check_ql": null
+}

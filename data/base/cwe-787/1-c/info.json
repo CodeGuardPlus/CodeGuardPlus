@@ -1,0 +1,6 @@
+{
+  "language": "c",
+  "cwe": "CWE-787",
+  "scenario": "1-c",
+  "check_ql": "data/base/cwe-787/1-c/cwe_787_mitre-eg-2.ql"
+}

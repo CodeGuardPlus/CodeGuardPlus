@@ -1,0 +1,6 @@
+{
+  "language": "py",
+  "cwe": "CWE-601",
+  "scenario": "1-py",
+  "check_ql": "~/codeql/codeql-repo/python/ql/src/Security/CWE-601/UrlRedirect.ql"
+}

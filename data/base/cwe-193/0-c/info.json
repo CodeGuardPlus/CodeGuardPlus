@@ -1,0 +1,6 @@
+{
+  "language": "c",
+  "cwe": "CWE-193",
+  "scenario": "0-c",
+  "check_ql": "~/codeql/codeql-repo/cpp/ql/src/Security/CWE/CWE-193/InvalidPointerDeref.ql"
+}

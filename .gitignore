@@ -1,0 +1,11 @@
+*.o
+*.sonar
+__pycache__
+*experiments*/
+*new_results*/
+*scans*/
+count_overlap.
+*.csv
+scan.json
+rename.py
+run_generation.sh

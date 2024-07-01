@@ -1,0 +1,6 @@
+{
+  "language": "py",
+  "cwe": "CWE-022",
+  "scenario": "2-py",
+  "check_ql": "data/base/cwe-022/2-py/cwe-22_TarSlip.ql"
+}

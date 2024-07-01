@@ -1,0 +1,6 @@
+{
+  "language": "c",
+  "cwe": "CWE-190",
+  "scenario": "2-c",
+  "check_ql": "data/base/cwe-190/2-c/cwe-190_mitre-eg-4.ql"
+}

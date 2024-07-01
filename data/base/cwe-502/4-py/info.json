@@ -1,0 +1,6 @@
+{
+  "language": "py",
+  "cwe": "CWE-502",
+  "scenario": "4-py",
+  "check_ql": "~/codeql/codeql-repo/python/ql/src/Security/CWE-502/UnsafeDeserialization.ql"
+}

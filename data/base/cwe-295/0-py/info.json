@@ -1,0 +1,6 @@
+{
+  "language": "py",
+  "cwe": "CWE-295",
+  "scenario": "0-py",
+  "check_ql": "~/codeql/codeql-repo/python/ql/src/Security/CWE-295/RequestWithoutValidation.ql"
+}

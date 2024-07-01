@@ -1,0 +1,6 @@
+{
+  "language": "c",
+  "cwe": "CWE-121",
+  "scenario": "0-c",
+  "check_ql": "~/codeql/codeql-repo/cpp/ql/src/Security/CWE/CWE-121/UnterminatedVarargsCall.ql"
+}

@@ -1,0 +1,6 @@
+{
+  "language": "py",
+  "cwe": "CWE-022",
+  "scenario": "5-py",
+  "check_ql": "~/codeql/codeql-repo/python/ql/src/Security/CWE-022/PathInjection.ql"
+}

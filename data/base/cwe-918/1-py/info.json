@@ -1,0 +1,6 @@
+{
+  "language": "py",
+  "cwe": "CWE-918",
+  "scenario": "1-py",
+  "check_ql": "~/codeql/codeql-repo/python/ql/src/Security/CWE-918/PartialServerSideRequestForgery.ql"
+}

@@ -1,0 +1,6 @@
+{
+  "language": "py",
+  "cwe": "CWE-643",
+  "scenario": "1-py",
+  "check_ql": "~/codeql/codeql-repo/python/ql/src/Security/CWE-643/XpathInjection.ql"
+}
