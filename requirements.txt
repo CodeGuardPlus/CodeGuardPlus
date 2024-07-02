@@ -1,0 +1,15 @@
+flask
+jinja2
+sqlite3
+paramiko
+pycryptodome
+argon2-cffi
+cryptography
+pyjwt
+python-jose
+pyyaml
+Django
+lxml
+defusedxml
+boto3
+func-timeout
