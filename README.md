@@ -7,7 +7,7 @@ This is the repositiory for the paper "Constrained Decoding for Secure Code Gene
   <a href="https://arxiv.org/pdf/2405.00218">📄 Paper</a>
 </p>
 
-# TL; DR
+## TL; DR
 There is a disconnection between benchmarks for Code LLMs that evaluate the security and those that assess correctness. Existing benchmarks, like HumanEval and MBPP only evaluate the correctness, while others like Copilot dataset and SecurityEval only target on the security. To bridge this gap, we present CodeGuard+, along with two new metrics, to measure Code LLMs' ability to generate both secure and correct code. Currently, CodeGuard+ supports Python and C/C++, with 103 prompts covering 42 CWEs.
 
 ## Directory Structure
