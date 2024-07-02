@@ -9,12 +9,6 @@ import numpy as np
 from inference.constant import CWES_DICT, CWES
 from inference.constraints import constraints
 
-cwe_list = ['cwe-131', 'cwe-134', 'cwe-400', 'cwe-787', 'cwe-020', 'cwe-918', 'cwe-022', 
-            'cwe-416', 'cwe-295', 'cwe-190', 'cwe-193', 'cwe-326', 'cwe-327', 'cwe-078', 
-            'cwe-079', 'cwe-089', 'cwe-601', 'cwe-347', 'cwe-732', 'cwe-476', 'cwe-094', 
-            'cwe-611', 'cwe-502', 'cwe-119', 'cwe-120', 'cwe-125']
-
-
 def pass_at_k(n, c, k):
     if n == 0: 
         return -1
@@ -38,14 +32,12 @@ def traverse_and_exec(path, func, **kwargs):
             #     continue
             eval_type_path = os.path.join(seed_path, eval_type)
             for vul_type in os.listdir(eval_type_path):
-                if vul_type not in cwe_list:
+                if vul_type not in CWES:
                     continue
                 vul_type_path = os.path.join(eval_type_path, vul_type)
                 for sub_type in os.listdir(vul_type_path):
                     if not os.path.isdir(os.path.join(vul_type_path, sub_type)):
                         continue
-                    # if not sub_type.endswith('-c'):
-                    #     continue
                     if os.path.exists(os.path.join(vul_type_path, sub_type, 'deduplicated')):
                         sub_path = os.path.join(vul_type_path, sub_type, 'deduplicated')
                     elif os.path.exists(os.path.join(vul_type_path, sub_type, 'orig_output')):
@@ -316,7 +308,7 @@ if __name__ == '__main__':
     parser.add_argument('--paths', nargs='+', type=str, required=True)
     parser.add_argument('--do_eval', action='store_true')
     parser.add_argument('--do_print', action='store_true')
-    parser.add_argument('--num_seeds', type=int, default=10)
+    parser.add_argument('--num_seeds', type=int, default=1)
     parser.add_argument('--num_gen', type=int, default=10)
     parser.add_argument('--use_constraints', action='store_true')
     parser.add_argument('--csv_file_path', type=str, default='results.csv')
