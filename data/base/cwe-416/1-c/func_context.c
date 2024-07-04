@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
     // free the buffer
     free(buffer);
 
-    //if the checksum is 0, the buffer is empty
+    // if the checksum is 0, the buffer is empty
     if (checksum == 0) {
         printf("Buffer is empty\n");
     } else {
