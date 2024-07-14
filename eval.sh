@@ -33,7 +33,7 @@ eval $COMMAND
 
 # CodeQL evaluation
 echo "Running CodeQL evaluation."
-COMMAND="python codeql_eval.py --output_dir experiments/$OUTPUT_NAME--category $EVAL_TYPE"
+COMMAND="python codeql_eval.py --output_dir experiments/$OUTPUT_NAME --category $EVAL_TYPE"
 echo "Executing command: $COMMAND"
 eval $COMMAND
 

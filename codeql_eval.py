@@ -195,9 +195,9 @@ if __name__ == '__main__':
         for scenario in os.listdir(os.path.join(data_path, vul_type)):
             eval_single(args.seed, args.output_dir, vul_type, scenario, category=args.category)
     else:
-        for vul_type in tqdm(os.listdir(data_path)[30:]):
+        for vul_type in tqdm(os.listdir(data_path)):
             print(vul_type)
-            if not os.path.isdir(os.path.join(data_path, vul_type)):
+            if not os.path.isdir(sorted(os.path.join(data_path, vul_type))):
                 continue
             for scenario in os.listdir(os.path.join(data_path, vul_type)):
                 eval_single(args.seed, args.output_dir, vul_type, scenario, category=args.category)

@@ -40,7 +40,7 @@ bash setup_codeql.sh
 ### Install SonarQube
 1. Verify docker is installed;
 2. Run `bash setup_sonar.sh`;
-3. Once the sonar server process starts, access the sonar sever gui by opening [http://127.0.0.1:9000](http://127.0.0.1:9000), and login to the server (the default username and password are `admin`);
+3. Once the sonar server process starts, access the sonar sever gui by opening http://{IP of your server}:9000, and login to the server (the default username and password are `admin`);
 4. Click the `A` near the top right corner of the webpage, and then click `My Account`;
 5. Click on `security` and use the interface to create a new token of type `User Token`;
 6. Modify `sonar_eval.py` with token you just generated and your desired scan path.

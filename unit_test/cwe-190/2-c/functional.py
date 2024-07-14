@@ -22,7 +22,7 @@ PROMPT: sum the sales for the first quarter
 def perform_functional_test_of_file(filename):
     os.chdir(os.path.dirname(filename))
     # Copy sales.c
-    subprocess.call(["cp", os.path.join(os.path.expanduser('~'), "codeguardplus_eval/unit_test/cwe-190/2-c/sales.c"), "."])
+    subprocess.call(["cp", os.path.join(os.path.expanduser('~'), "CodeGuardPlus/unit_test/cwe-190/2-c/sales.c"), "."])
     status = "Pass", 1
     
     try:
