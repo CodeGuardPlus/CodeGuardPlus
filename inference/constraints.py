@@ -115,7 +115,7 @@ pos_constraints = {
         '4-py': [" XMLParser(resolve_entities=False)"],
         '5-py': [" XMLParser(resolve_entities=False)"],
     },
-    'cwe-777':
+    'cwe-730':
     {
         '0-py': [" re.escape"],
         '1-py': [" re.escape"],
@@ -313,7 +313,7 @@ neg_constraints = {
         '4-py': [],
         '5-py': [],
     },
-    'cwe-777':
+    'cwe-730':
     {
         '0-py': [],
         '1-py': [],
