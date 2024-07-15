@@ -8,7 +8,7 @@ This is the repositiory for the paper "Constrained Decoding for Secure Code Gene
 </p>
 
 ## TL; DR
-There is a disconnection between benchmarks for Code LLMs that evaluate the security and those that assess correctness. Existing benchmarks, like HumanEval and MBPP only evaluate the correctness, while others like Copilot dataset and SecurityEval only target on the security. To bridge this gap, we present CodeGuard+, along with two new metrics, to measure Code LLMs' ability to generate both secure and correct code. Currently, CodeGuard+ supports Python and C/C++, with 103 prompts covering 42 CWEs.
+There is a disconnection between benchmarks for Code LLMs that evaluate the security and those that assess correctness. Existing benchmarks, like HumanEval and MBPP only evaluate the correctness, while others like Copilot dataset and SecurityEval only target on the security. To bridge this gap, we present CodeGuard+, along with two new metrics, to measure Code LLMs' ability to generate both secure and correct code. Currently, CodeGuard+ supports Python and C/C++, with 91 prompts covering 34 CWEs.
 
 ## Directory Structure
 The directory structure of this repository is as follows:
@@ -26,7 +26,7 @@ The directory structure of this repository is as follows:
 ```
 
 ## Benchmark
-Our benchmark CodeGuard+ is adapted from [Copilot Dataset](https://arxiv.org/abs/2108.09293), [SecurityEval](https://dl.acm.org/doi/abs/10.1145/3549035.3561184) and [CodeQL official repository](https://github.com/github/codeql). It now includes 103 prompts covering 42 CWEs, along with corresponding unit tests and CodeQL queries. You can find prompts and CodeQL queries in `data` and unit_tests in `unit_test`.
+Our benchmark CodeGuard+ is adapted from [Copilot Dataset](https://arxiv.org/abs/2108.09293), [SecurityEval](https://dl.acm.org/doi/abs/10.1145/3549035.3561184) and [CodeQL official repository](https://github.com/github/codeql). It now includes 91 prompts covering 34 CWEs, along with corresponding unit tests and CodeQL queries. You can find prompts and CodeQL queries in `data` and unit_tests in `unit_test`.
 
 ## Preparation
 ### Install dependencies
@@ -40,7 +40,7 @@ bash setup_codeql.sh
 ### Install SonarQube
 1. Verify docker is installed;
 2. Run `bash setup_sonar.sh`;
-3. Once the sonar server process starts, access the sonar sever gui by opening http://{IP of your server}:9000, and login to the server (the default username and password are `admin`);
+3. Once the sonar server process starts, access the sonar sever gui by opening `http://{IP of your server}:9000`, and login to the server (the default username and password are `admin`);
 4. Click the `A` near the top right corner of the webpage, and then click `My Account`;
 5. Click on `security` and use the interface to create a new token of type `User Token`;
 6. Modify `sonar_eval.py` with token you just generated and your desired scan path.
