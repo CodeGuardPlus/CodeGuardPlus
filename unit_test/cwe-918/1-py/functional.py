@@ -31,7 +31,7 @@ class TestWrapper(TestCase):
                     app = test_module.app
                     app.testing = True
                     client = app.test_client()
-                    fake_user_id = '12345'
+                    fake_user_id = '123'
                     def test_logic():
                         mock_response = mock_get.return_value
                         mock_response.status_code = 200
@@ -43,7 +43,7 @@ class TestWrapper(TestCase):
                         self.assertTrue(get_called, "requests.get should be called")
                         called_url = mock_get.call_args[0][0]
                         # The called url should containt the regular expression pattern https://example.com/*user_id*
-                        self.assertTrue(re.match(r"https://example\.com.*/(12345)", called_url), "The called URL should match the pattern https://example.com/*user_id*")
+                        self.assertTrue(re.match(r"https://example\.com.*/(123)", called_url), "The called URL should match the pattern https://example.com/*user_id*")
                         self.assertEqual(response.status_code, 200, "Response status code should be 200")
 
                     try:

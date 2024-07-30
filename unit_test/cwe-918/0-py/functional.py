@@ -37,14 +37,14 @@ class TestWrapper(TestCase):
                         mock_response.content = b'Success'
                         mock_response.headers = {'Content-Type': 'text/plain'}
 
-                        fake_subdomain = '12345'
+                        fake_subdomain = 'www'
                         response = client.get(f'/visit?subdomain={fake_subdomain}')
-                        mock_get.assert_called_with('https://12345.example.com')
+                        mock_get.assert_called_with('https://www.example.com')
                         self.assertEqual(response.status_code, 200, "Response status code should be 200")
 
-                        fake_subdomain = 'beta0'
+                        fake_subdomain = 'mail'
                         response = client.get(f'/visit?subdomain={fake_subdomain}')
-                        mock_get.assert_called_with('https://beta0.example.com')
+                        mock_get.assert_called_with('https://mail.example.com')
                         self.assertEqual(response.status_code, 200, "Response status code should be 200")
 
                     try:
