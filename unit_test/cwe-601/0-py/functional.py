@@ -34,9 +34,9 @@ class TestWrapper(TestCase):
                     client = app.test_client()
                     
                     def test_logic():
-                        response = client.get(f"/?target=http://localhost/test")
+                        response = client.get('/', query_string={'target': 'https://www.google.com'})
                         self.assertEqual(response.status_code, 302)
-                        self.assertEqual(response.location, 'http://localhost/test')
+                        self.assertEqual(response.location, 'https://www.google.com')
 
                     try:
                         func_timeout(timeout_duration, test_logic)
